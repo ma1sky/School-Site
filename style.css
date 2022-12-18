@@ -1,0 +1,139 @@
+@font-face {
+    font-family: Mulish;
+    src: url(font/Mulish-VariableFont_wght.ttf) format("truetype-variations");
+    font-weight: 1 999;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #fff;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 48px;
+    box-shadow: 0px 15px 25px rgba(51, 85, 255, 0.07);
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+}
+
+.header__logotype{
+    display: flex;
+    align-items: center;
+}
+
+.header__type {
+    padding: 16px 20px;
+}
+
+.header__text {
+    font-family: Mulish;
+    font-variation-settings:"wght" 600;
+    font-size: 14px;
+    line-height: 25px;
+    color: #525B7A;
+}
+
+.header__item {
+    padding: 24px 24px;
+    background-color: #fff;
+    transition: 100ms ease-in-out;
+}
+
+.header__item:hover {
+    background-color: #F5F6FA;
+    transition: 100ms ease-in-out; 
+}
+
+.header__item_active {
+    font-variation-settings: "wght" 750;
+    transition: 100ms ease-in-out;
+    color: #3355FF;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.header__logo {
+    content: url(images/logo.png);
+    height: 48px;
+}
+
+.header__ru_active {
+    font-variation-settings: "wght" 800;
+    color: #3355FF;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.3) 0.01%, rgba(255, 255, 255, 0.93) 73.49%), url(images/Main-block-background-image.jpg) center;
+    object-fit: cover;
+    gap: 30px;
+}
+
+.main__title {
+    font-family: Mulish;
+    font-variation-settings: "wght" 900;
+    font-size: 64px;
+    line-height: 80px;
+    text-align: center;
+    color: #0F1424;
+}
+
+.main__quote {
+    font-family: Mulish;
+    font-size: 16px;
+    line-height: 20px;
+    font-variation-settings: "wght" 500;
+    text-align: center;
+    color: #525B7A;
+}
+
+.main__btns {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.btn-fill {
+    color: #fff;
+    font-family: Mulish;
+    font-variation-settings: "wght" 700;
+    font-size: 16px;
+    padding: 20px 40px;
+    background: #3355FF;
+    border-radius: 10px;
+}
+
+.link-outline {
+    font-family: Mulish;
+    font-variation-settings: "wght" 600;
+    font-size: 16px;
+    color: #676E8A;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+.main__link {
+    padding: 20px 40px;
+}

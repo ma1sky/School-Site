@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <title>Лицей им. А.С.Пушкина</title>
 </head>
+
 <body>
-    
+    <header class="header">
+        <a href="#" class="header__logotype">
+            <span class="header__logo"></span>
+            <span class="header__type header__text">Лицей им. А.С.Пушкина</span>
+        </a>
+
+        <nav class="header__nav">
+            <a href="#" class="header__item header__text">Новости</a>
+            <a href="#" class="header__item header__text">Коллектив</a>
+            <a href="#" class="header__item header__text">О школе</a>
+            <a href="#" class="header__item header__text">Галерея</a>
+            <a href="#" class="header__item header__text">Контакты</a>
+            <a href="#" class="header__item header__text">Ученикам</a>
+            <a href="#" class="header__item header__text">Регламент</a>
+        </nav>
+        <div class="header__lang-switcher">
+            <button class="header__ru header__ru_active header__text">Ru</button>
+            <span class="header__slash header__text">/</span>
+            <button class="header__ro header__text">Ro</button>
+        </div>
+    </header>
+    <main class="main">
+        <h1 class="main__title">Ученье — свет, а<br>
+            неученье — тьма</h1>
+        <blockquote class="main__quote">
+            “В начале жизни школу помню я;<br>
+            Там нас, детей беспечных, было много;<br>
+            Неровная и резвая семья.” А. С. Пушкин<br>
+        </blockquote>
+        <div class="main__btns">
+            <button class="btn-fill">Записаться</button>
+            <div class="main__link"><a class="link-outline">Подробнее</a></div>
+        </div>
+    </main>
+    <script src="index.js"></script>
 </body>
+
 </html>
