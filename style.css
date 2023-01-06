@@ -42,6 +42,7 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    transition: all 150ms ease-in-out;
 }
 
 button {
@@ -78,24 +79,24 @@ a {
     font-variation-settings:"wght" 600;
     font-size: 14px;
     line-height: 25px;
-    color: #0F1424;
+    color: var(--dark-text);
 }
 
 .header__item {
     padding: 24px 24px;
     background-color: var(--header-bg-color);
-    transition: 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
 }
 
 .header__item:hover {
     background-color: #F5F6FA;
-    transition: 100ms ease-in-out; 
+    transition: all 100ms ease-in-out;
     font-variation-settings: "wght" 750;
 }
 
 .header__item_active {
     font-variation-settings: "wght" 750;
-    transition: 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
     color: var(--accent-color);
 }
 
@@ -131,7 +132,7 @@ a {
     font-size: 64px;
     line-height: 80px;
     text-align: center;
-    color: #0F1424;
+    color: var(--dark-text);
 }
 
 .main__quote {
@@ -140,7 +141,7 @@ a {
     line-height: 20px;
     font-variation-settings: "wght" 500;
     text-align: center;
-    color: #525B7A;
+    color: var(--paragraph-text);
 }
 
 .main__btns {
@@ -183,12 +184,6 @@ a {
     align-items: center;
 }
 
-.article-news__image {
-    border-radius: 5px;
-    width: 240px;
-    height: 187px;
-}
-
 .news__block {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -208,6 +203,7 @@ a {
     line-height: 35px;
     font-variation-settings: "wght" 750;
     color: var(--dark-text);
+    transition: all 250ms ease-in-out;
 }
 
 .article-news__stat {
@@ -250,11 +246,22 @@ a {
     height: 100%;
     width: 100%;
     background-color: var(--btn-bg);
+    color: var(--accent-color);
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    font-variation-settings: "wght" 750;
+}
+
+.article-news__btn:hover {
+    background-color: var(--accent-color);
+    color: var(--btn-bg);
+}
+
+.article-news__btn_hover {
+    color: var(--btn-bg);
 }
 
 .arrow-right {
@@ -267,4 +274,28 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.article-news_hover {
+    transition: all 350ms ease-in-out;
+    color: var(--accent-color);
+}
+
+.article-news_small {
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+    background-color: var(--block-bg);
+    border-radius: 10px;
+}
+
+.article-news__image_hover {
+    transition: all 250ms ease-in-out;
+}
+
+.article-news__image {
+    border-radius: 5px;
+    width: 240px;
+    max-height: 100%;
+    object-fit: cover;
 }
