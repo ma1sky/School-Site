@@ -64,6 +64,7 @@ a {
     position: fixed;
     top: 0;
     background-color: var(--header-bg-color);
+    z-index: 1;
 }
 
 .header__logotype{
@@ -198,11 +199,14 @@ a {
     border-radius: 10px;
 }
 
-.article-news__title {
+.headline-4 {
     font-size: 28px;
     line-height: 35px;
     font-variation-settings: "wght" 750;
     color: var(--dark-text);
+}
+
+.article-news__title {
     transition: all 250ms ease-in-out;
 }
 
@@ -238,8 +242,8 @@ a {
 }
 
 .paragraph-bold {
-    font-variation-settings: "wght" 750;
-    color: var(--accent-color);   
+    font-variation-settings: "wght" 700;
+    color: var(--paragraph-text);
 }
 
 .article-news__btn {
@@ -307,4 +311,58 @@ a {
     min-width: 240px;
     overflow: hidden;
     border-radius: 5px;
+}
+
+.headline-3 {
+    font-size: 36px;
+    line-height: 140%;
+    font-variation-settings: "wght" 700;
+    color: var(--dark-text);
+    margin-bottom: 24px;
+}
+
+.cards-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 16px;
+    margin-bottom: 32px;
+}
+
+.card {
+    background-color: var(--block-bg);
+    border-radius: 10px;
+    padding: 16px;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__image {
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.card__features {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card__work-experience,
+.card__profession {
+    flex-direction: row;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.icon {
+    width: 24px;
+}
+
+.card__info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
