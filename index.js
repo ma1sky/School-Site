@@ -11,11 +11,11 @@ document.querySelectorAll(".header__item").forEach(item => {
 document.querySelectorAll(".article-news").forEach(item => {
     item.onmouseenter = () => {
         item.childNodes[3].childNodes[1].classList.add("article-news_hover");
-        item.childNodes[1].classList.add("article-news__image_hover");
+        item.childNodes[1].childNodes[1].classList.add("article-news__image_hover");
     }
     item.onmouseleave = () => {
         item.childNodes[3].childNodes[1].classList.remove("article-news_hover");
-        item.childNodes[1].classList.remove("article-news__image_hover");
+        item.childNodes[1].childNodes[1].classList.remove("article-news__image_hover");
     }
 });
 
