@@ -12,6 +12,7 @@
     --btn-bg: #fff;
     --header-bg-color: #fff;
     --accent-color: #3355FF;
+    --accent-color-hover: #334DCC;
     --dark-text: #0F1424;
     --main-bg: #EEEEEE;
     --block-bg: #fff;
@@ -158,6 +159,12 @@ a {
     padding: 20px 40px;
     background: var(--accent-color);
     border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-fill:hover {
+    background-color: var(--accent-color-hover);
+    box-shadow: 0px 15px 25px rgba(51, 85, 255, 0.07);
 }
 
 .link-outline {
@@ -166,6 +173,17 @@ a {
     color: #676E8A;
     text-decoration: underline;
     text-decoration-skip-ink: none;
+    cursor: pointer;
+}
+
+.small-text {
+    color: var(--paragraph-text);
+    font-size: 12px;
+}
+
+.link-outline:hover {
+    font-variation-settings: "wght" 700;
+    color: var(--dark-text);
 }
 
 .main__link {
@@ -177,6 +195,7 @@ a {
     line-height: 60px;
     font-variation-settings: "wght" 800;
     margin-bottom: 32px;
+    color: var(--dark-text);
 }
 
 .news {
@@ -404,6 +423,84 @@ ul {
 }
 
 .about-school {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery__block {
+    background-color: var(--block-bg);
+    padding: 16px;
+    border-radius: 10px;
+    display: grid;
+    column-gap: 8px;
+    row-gap: 8px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 32px;
+}
+
+.gallery__image {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts__value {
+    color: var(--dark-text);
+}
+
+h5 {
+    font-style: normal;
+    font-variation-settings: "wght" 400;
+    font-weight: 400;
+}
+
+.contacts__value-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+.contacts__item {
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contacts__block {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    gap: 16px;
+}
+
+.contacts__map {
+    border-radius: 10px;
+    padding: 16px;
+    background-color: var(--block-bg);
+}
+
+.map {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.contacts {
     display: flex;
     flex-direction: column;
     align-items: center;
