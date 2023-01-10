@@ -12,19 +12,19 @@
 
 <body>
     <header class="header">
-        <a href="#" class="header__logotype">
+        <a href="#main" class="header__logotype">
             <span class="header__logo"></span>
-            <span class="header__type header__text">Лицей им. А.С.Пушкина</span>
+            <span class="header__type header__text header__item">Лицей им. А.С.Пушкина</span>
         </a>
 
         <nav class="header__nav">
-            <a href="#" class="header__item header__text">Новости</a>
-            <a href="#" class="header__item header__text">Коллектив</a>
-            <a href="#" class="header__item header__text">О школе</a>
-            <a href="#" class="header__item header__text">Галерея</a>
-            <a href="#" class="header__item header__text">Контакты</a>
-            <a href="#" class="header__item header__text">Ученикам</a>
-            <a href="#" class="header__item header__text">Регламент</a>
+            <a href="#news" class="header__item header__text">Новости</a>
+            <a href="#personnel" class="header__item header__text">Коллектив</a>
+            <a href="#about-school" class="header__item header__text">О школе</a>
+            <a href="#gallery" class="header__item header__text">Галерея</a>
+            <a href="#contacts" class="header__item header__text">Контакты</a>
+            <a href="#for-students" class="header__item header__text">Ученикам</a>
+            <a href="#reglament" class="header__item header__text">Регламент</a>
         </nav>
         <div class="header__lang-switcher">
             <button class="header__ru header__ru_active header__text">Ru</button>
@@ -32,7 +32,7 @@
             <button class="header__ro header__text">Ro</button>
         </div>
     </header>
-    <main class="main">
+    <main class="main section" id="main">
         <h1 class="main__title">Ученье — свет, а<br>
             неученье — тьма</h1>
         <blockquote class="main__quote">
@@ -46,7 +46,7 @@
         </div>
     </main>
     <div class="container">
-        <section class="news">
+        <section class="news section" id="news">
             <h2 class="news__title headline-2">Новости</h2>
             <div class="news__block">
                 <div class="col2-3">
@@ -174,7 +174,7 @@
                 </div>
             </div>
         </section>
-        <section class="personnel">
+        <section class="personnel section" id="personnel">
             <h2 class="personnel-title headline-2">Коллектив</h2>
             <div class="personnel-block">
                 <h3 class="personnel-subtitle headline-3">Администрация:</h3>
@@ -352,7 +352,7 @@
                 Смотреть полностью
             </a>
         </section>
-        <section class="about-school">
+        <section class="about-school section" id="about-school">
             <h2 class="about-school__title headline-2">О школе</h2>
             <div class="about-school__block">
                 <div class="col1-3">
@@ -382,7 +382,7 @@
                 </div>
             </div>
         </section>
-        <section class="gallery">
+        <section class="gallery section" id="gallery">
             <h2 class="headline-2">Галерея</h2>
             <div class="gallery__block">
                 <img src="images/gallery-photo.png" class="gallery__image"></img>
@@ -394,7 +394,7 @@
             </div>
             <a href="#" class="link-outline">Смотреть полностью</a>
         </section>
-        <section class="contacts">
+        <section class="contacts section" id="contacts">
             <h2 class="headline-2">Контакты</h2>
             <div class="contacts__block">
                 <div class="col1-3 contacts__info">
@@ -440,6 +440,14 @@
                         width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
+            </div>
+        </section>
+        <section class="for-students section" id="for-students">
+            <h2 class="headline-2">Ученикам</h2>
+            <div class="for-students__block">
+                <div class="for-students__item"></div>
+                <div class="for-students__item"></div>
+                <div class="for-students__item"></div>
             </div>
         </section>
     </div>
