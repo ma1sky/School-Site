@@ -17,6 +17,7 @@
     --main-bg: #F6F6F9;
     --block-bg: #fff;
     --paragraph-text: #676E8A;
+    --white-text: #fff;
 }
 
 h1, h2, h3, h4, h5, h6, a, button, li, input, p {
@@ -221,7 +222,7 @@ a {
 .headline-4 {
     font-size: 28px;
     line-height: 35px;
-    font-variation-settings: "wght" 750;
+    font-variation-settings: "wght" 650;
     color: var(--dark-text);
 }
 
@@ -504,4 +505,43 @@ h5 {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.for-students__block {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 16px;
+}
+
+.for-students__item {
+    height: 360px;
+    width: 100%;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(15, 20, 36, 0) 0%, rgba(15, 20, 36, 0.7) 99.99%, rgba(15, 20, 36, 0.5) 100%), url(images/For-students-image.png);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    cursor: pointer;
+    transition: opacity 0.5s;
+}
+
+.for-students__item:hover {
+    background: linear-gradient(180deg, rgba(41, 61, 163, 0) 0%, #293DA3 100%, rgba(41, 61, 163, 0.5) 100%), url(images/For-students-image.png);
+    transition: opacity 0.5s;
+}
+
+.for-students__title {
+    color: var(--white-text);
+}
+
+.for-students {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    background-color: var(--block-bg);
 }
