@@ -564,6 +564,7 @@ h5 {
     width: 100%;
     align-items: center;
     gap: 16px;
+    cursor: pointer;
 }
 
 .bylaw__icon-wrapper {
@@ -582,4 +583,26 @@ h5 {
     font-variation-settings: "wght" 700;
     text-align: center;
     color: var(--paragraph-text);
+}
+
+.qanda__block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.qanda__item {
+    padding: 16px;
+    border-radius: 5px;
+    background-color: var(--block-bg);
+    cursor: pointer;
+}
+
+.question {
+    text-align: left;
+    color: var(--dark-text);
+}
+
+.bylaw__answer_hidden {
+    display: none;
 }

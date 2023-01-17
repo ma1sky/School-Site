@@ -49,7 +49,7 @@ document.querySelectorAll(".header__item").forEach(item => {
         const anchorAttr = this.getAttribute("href").substring(1);
         const scrollTarget = document.getElementById(anchorAttr);
         const topOffset = document.querySelector(".header").clientHeight;
-        const elementPosition = scrollTarget.getBoundingClientRect().top;
+        const elementPosition = scrollTarget.offsetTop;
         const offsetPosition = elementPosition - topOffset;
         window.scrollBy({
             top: offsetPosition,
