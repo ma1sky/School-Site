@@ -18,6 +18,7 @@
     --block-bg: #fff;
     --paragraph-text: #676E8A;
     --white-text: #fff;
+    --accent-10per: #F5F6FA;
 }
 
 h1, h2, h3, h4, h5, h6, a, button, li, input, p {
@@ -542,6 +543,43 @@ h5 {
     align-items: center;
 }
 
-.footer {
+.bylaw {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bylaw__block {
+    display: flex;
+    width: 100%;
+    gap: 16px;
+}
+
+.bylaw__item {
     background-color: var(--block-bg);
+    border-radius: 10px; 
+    padding: 32px 0 ;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 16px;
+}
+
+.bylaw__icon-wrapper {
+    height: 140px;
+    background-color: var(--accent-10per);
+    padding: 32px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headline-5 {
+    font-size: 20px;
+    line-height: 25px;
+    font-variation-settings: "wght" 700;
+    text-align: center;
+    color: var(--paragraph-text);
 }
